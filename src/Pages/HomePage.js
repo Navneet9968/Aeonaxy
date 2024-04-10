@@ -42,13 +42,7 @@ function HomePage() {
         </div>
       ))}
 
-      {/* <ListHeadingSub subject="Student" sentence="or soon to be enrolled." />
-      <ListHeadingSub subject="Professional" sentence="pursuing a career." />
-      <ListHeadingSub subject="Parent" sentence="of a school-aged child" />
-      <ListHeadingSub subject="Lifelong-learner" sentence="" />
-      <ListHeadingSub subject="Teacher" sentence="" />
-      <ListHeadingSub subject="Other" sentence="" /> */}
-      <Link className="flex justify-center mt-5" to={"/interest"}>
+      <Link className="flex justify-center mt-5" to={selected==null ?"/": "/interest"}>
         <button
           type="button"
           className="px-10 text-white bg-[#050708] hover:bg-[#050708]/90 focus:ring-4 focus:outline-none focus:ring-[#050708]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#050708]/50 dark:hover:bg-[#050708]/30 me-2 mb-2 "

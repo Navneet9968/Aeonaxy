@@ -10,31 +10,25 @@ function LearningPath() {
           topic="Learning paths based on your answers"
           subtopic="Choose one to get started. You can switch anytime."
         />
-        <div className="flex space-x-5">
-          <div
-            className={` w-96 h-44 border-2 rounded-lg flex items-center justify-center cursor-pointer px-2 `}
-          >
-           <div className="absolute transform -translate-y-20 bg-yellow-500 text-black px-2 py-1 rounded">
+        <div class=" flex flex-col md:flex-row space-y-5 md:space-y-0 md:space-x-5">
+          <div class="w-full md:w-96 h-44 border-2 rounded-lg flex items-center justify-center cursor-pointer px-2 relative">
+            <div class="absolute top-0 transform -translate-y-5 bg-yellow-500 text-black px-2 py-1 rounded">
               Most Popular
             </div>
-            {/* <img src={item.mathImage} alt="" className="w-auto h-16" /> */}
-            <p className="text-sm text-gray-700">
-              <span className="font-bold">Foundational Math</span> Build your
+            <p class="text-sm text-gray-700 text-center">
+              <span class="font-bold">Foundational Math</span> Build your
               foundational skills in algebra, geometry, and probability.
             </p>
-            <img src={learningImage} alt="" className="w-auto h-36" />
+            <img src={learningImage} alt="" class="w-auto h-36 mt-2 md:mt-0" />
           </div>
-          <div
-            className={` w-96 h-44 border-2 rounded-lg flex items-center justify-center cursor-pointer px-2 `}
-          >
-            {/* <img src={item.mathImage} alt="" className="w-auto h-16" /> */}
-            <p className="text-sm text-gray-700">
-              <span className="font-bold">Mathematical Thinking</span>
+          <div class="w-full md:w-96 h-44 border-2 rounded-lg flex items-center justify-center cursor-pointer px-2 relative">
+            <p class="text-sm text-gray-700 text-center">
+              <span class="font-bold">Mathematical Thinking</span>
               <br />
               Build your foundational skills in algebra, geometry, and
               probability.
             </p>
-            <img src={learningImage} alt="" className="w-auto h-36" />
+            <img src={learningImage} alt="" class="w-auto h-36 mt-2 md:mt-0" />
           </div>
         </div>
       </div>

@@ -38,7 +38,10 @@ function InterestPage() {
           </div>
         </div>
       ))}
-      <Link className="flex justify-center mt-5" to={"/persuasion"}>
+      <Link
+        className="flex justify-center mt-5"
+        to={selected == null ? "/interest" : "/persuasion"}
+      >
         <button
           type="button"
           className="px-10 text-white bg-[#050708] hover:bg-[#050708]/90 focus:ring-4 focus:outline-none focus:ring-[#050708]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#050708]/50 dark:hover:bg-[#050708]/30 me-2 mb-2 "

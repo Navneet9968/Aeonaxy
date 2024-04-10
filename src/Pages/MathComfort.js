@@ -31,11 +31,11 @@ function MathComfort() {
         topic="What is your math comfort level?"
         subtopic="Choose the highest level you feel confident in - you can always adjust later."
       />
-      <div className="flex justify-center space-x-4">
+      <div className="flex flex-wrap justify-center gap-4 md:space-x-4">
         {listItems.map((item, index) => (
           <div
             key={index}
-            className={`w-48 h-48 border-2 rounded-lg flex flex-col items-center justify-center cursor-pointer ${
+            className={`w-full md:w-48 h-48 border-2 rounded-lg flex flex-col items-center justify-center cursor-pointer ${
               selected === index ? "ring-2 ring-yellow-500 shadow-lg" : ""
             }`}
             onClick={() => setSelected(index)}
@@ -47,7 +47,10 @@ function MathComfort() {
         ))}
       </div>
 
-      <Link className="flex justify-center mt-5" to={"/quote"}>
+      <Link
+        className="flex justify-center mt-5"
+        to={selected == null ? "/math-comfort" : "/quote"}
+      >
         <button
           type="button"
           className="px-10 text-white bg-[#050708] hover:bg-[#050708]/90 focus:ring-4 focus:outline-none focus:ring-[#050708]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#050708]/50 dark:hover:bg-[#050708]/30 me-2 mb-2 "
