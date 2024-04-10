@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import ListHeadingSub from "../components/ListHeadingSub";
 import ProgressBar from "../components/ProgressBar";
 import TopicSubtopic from "../components/TopicSubtopic";
 import { useState } from "react";
@@ -19,7 +18,7 @@ function InterestPage() {
 
   return (
     <>
-      <ProgressBar progress={30} button="true" />
+      <ProgressBar progress={20} button="true" backTo={"/"} />
       <TopicSubtopic
         topic="Which are you most interested in?"
         subtopic="Choose just one. This will help us get you started (but won't limit your experience)."
@@ -39,14 +38,14 @@ function InterestPage() {
           </div>
         </div>
       ))}
-      <div className="flex justify-center mt-5">
+      <Link className="flex justify-center mt-5" to={"/persuasion"}>
         <button
           type="button"
           className="px-10 text-white bg-[#050708] hover:bg-[#050708]/90 focus:ring-4 focus:outline-none focus:ring-[#050708]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#050708]/50 dark:hover:bg-[#050708]/30 me-2 mb-2 "
         >
           Continue
         </button>
-      </div>
+      </Link>
     </>
   );
 }

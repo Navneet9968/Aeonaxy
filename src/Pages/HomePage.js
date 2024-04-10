@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import ListHeadingSub from "../components/ListHeadingSub";
 import ProgressBar from "../components/ProgressBar";
 import TopicSubtopic from "../components/TopicSubtopic";
 import { useState } from "react";
